@@ -1,0 +1,162 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    background-image: url(https://img.freepik.com/free-photo/skull-with-flowers-studio_23-2150832499.jpg?t=st=1722734692~exp=1722738292~hmac=f7db25483f8f8ba9798d159d7bd0e621228097c94d1bd628463deaac5de84a91&w=900);
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+
+    height: 100vh;
+    
+    
+
+    font-size: 20px;
+
+    padding-top: 3.6%;
+}
+
+h1{
+    text-align: center;
+    font-size: 60px;
+
+    color: #c9404b;
+    padding-bottom: 3%;
+}
+
+.boxes{
+    width: 50%;
+    margin: auto;
+
+    padding-bottom: 3%;
+
+    position: relative;
+    
+}
+
+.title{
+    display: flex;
+
+    width: 100%;
+    height: 40px;
+
+    position: absolute;
+    z-index: 2;
+}
+
+h2{
+    display: flex;
+    flex: 95%;
+    padding: 30px;
+
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+
+
+    background-color: #e3a6a9;
+    border-bottom-left-radius: 10px;
+}
+
+.btn{
+    display: flex;
+    flex: 5%;
+    padding: 30px;
+
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+
+    border: 0;
+
+    background-color: #e3a6a9;
+    border-bottom-right-radius: 10px;
+}
+
+.mdi-menu-down{
+    font-size: 60px;
+
+    color: black;
+
+    animation: is-boucing 0.6s ease-in alternate infinite ;
+}
+
+@keyframes is-boucing {
+    to {
+        transform: translateY(5px);
+    }
+}
+
+.mdi-menu-up{
+    font-size: 60px;
+
+    color: black;
+
+    animation: is-boucing-up 0.6s ease-in alternate infinite ;
+}
+
+@keyframes is-boucing-up {
+    to {
+        transform: translateY(-5px);
+    }
+}
+
+.text{
+    width: 100%;
+    height: 40px;
+
+    position: relative;
+    z-index: 1;
+    bottom: 0px;
+    
+    background: linear-gradient(180deg, #e7a1aa, #d3bea9);
+
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    transition: height 0.5s ease-out;
+}
+
+blockquote{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+
+    transition: 0.8s ease-out;
+    opacity: 0;
+}
+
+p{
+    text-align: justify;
+    line-height: 1.5;
+    text-indent: 30px;
+
+    display: none;
+
+    transition: 0.8s ease-out;
+    opacity: 0;
+}
+
+.text.active{
+    height: 460px;
+    padding: 50px;
+}
+
+.text.unic.active{
+    height: 560px;
+    padding: 50px;
+}
+
+.text.active p{
+    opacity: 1;
+    padding: 10px;
+
+    display: inline-block;
+}
+
+.text.active blockquote{
+    opacity: 1;
+}
